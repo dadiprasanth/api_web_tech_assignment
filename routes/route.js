@@ -13,6 +13,6 @@ route.get("/",async(req,res)=>{
     res.render("form.ejs",{orderdata,customersdata,productsdata})
 }) 
 route.post("/placeorder",async(req,res)=>{
-    console.log(req.body)
-    res.status(200).send(req.body)
+    console.log(req.body,"jkncjkxznjcn")
+    res.status(200).send("data from post")
 })  
