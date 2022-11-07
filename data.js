@@ -1,0 +1,109 @@
+const data={
+        
+        productTable:
+            [
+                {
+            Product_id:"PRD500",
+             Product_type:"Electronics",
+              Product_name:"Fridge",
+               Product_price:500,
+                Available_quantity:15,
+        },
+        {
+            Product_id:"PRD501",
+             Product_type:"Electronics",
+              Product_name:"Mobile",
+               Product_price:200,
+                Available_quantity:50,
+        },
+        {
+            Product_id:"PRD502",
+             Product_type:"Electronics",
+              Product_name:"Television",
+               Product_price:300,
+                Available_quantity:10,
+        },
+        {
+            Product_id:"PRD503",
+             Product_type:"Furniture",
+              Product_name:"Table",
+               Product_price:200,
+                Available_quantity:5,
+        },
+        {
+            Product_id:"PRD504",
+             Product_type:"Furniture",
+              Product_name:"Bed",
+               Product_price:400,
+                Available_quantity:12,
+        },
+        {
+            Product_id:"PRD505",
+             Product_type:"Furniture",
+              Product_name:"Sofa",
+               Product_price:300,
+                Available_quantity:10,
+        },
+        {
+            Product_id:"PRD506",
+             Product_type:"Furniture",
+              Product_name:"Chair",
+               Product_price:100,
+                Available_quantity:50,
+        }
+    
+    
+    
+    ]
+    ,
+    customerTable:[
+        {
+        customer_id:"CT100",
+         customer_name:"prasanth",
+         email:"prasanth@gmail.com",
+         balance:5000
+        },
+         {customer_id:"CT101",
+         customer_name:"sai",
+         email:"sai@gmail.com",
+         balance:2500},
+         {customer_id:"CT102",
+         customer_name:"dhanu",
+         email:"dhanu@gmail.com",
+         balance:4000},
+          {customer_id:"CT103",
+         customer_name:"vasavi",
+         email:"vasavi@gmail.com",
+         balance:2000},
+         {customer_id:"CT104",
+         customer_name:"kushal",
+         email:"kushal@gmail.com",
+         balance:1000}
+    ]
+        
+    ,
+    orderTable:[
+        {
+            customer_id:"CT100",
+             inventory_id:"PRD501",
+             item_name:"Mobile",
+              quantity:3
+
+        },
+        {
+            customer_id:"CT103",
+             inventory_id:"PRD506",
+             item_name:"Chair",
+              quantity:10
+
+        },
+        {
+            customer_id:"CT100",
+             inventory_id:"PRD502",
+             item_name:"Televison",
+              quantity:2
+
+        },
+    ]
+}
+module.exports=data

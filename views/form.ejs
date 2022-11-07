@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/placeorder" method="POST">
+        <input type="email" placeholder="enter email id" name="email"/>
+        <input type="number" placeholder="enter no of chairs" name="quantity"/> 
+        <input type="text" placeholder="enter no product id" name="Product_id"/>
+        <button type="submit">placeorder</button>
+    </form>
+    <div>
+        <h1>PRODUCT TABLE</h1>
+        <table>
+            <thead>
+                <th>Product_id</th> 
+                <th>Product_type</th>
+                <th>Product_name</th> 
+                <th>Product_price</th> 
+                <th> Available_quantity</th>
+            </thead>
+            <tbody>
+                <% productsdata.forEach(x=>{ %>
+                    <tr>
+                        <td>
+                            <%=x.Product_id %>
+                        </td>
+                        <td>
+                            <%=x.Product_type %>
+                        </td>
+                        <td>
+                            <%=x.Product_name %>
+                        </td>
+                        <td>
+                            <%=x.Product_price %>
+                        </td>
+                        <td>
+                            <%=x.Available_quantity %>
+                        </td>
+                    </tr>
+                <%}) %>
+            </tbody>
+        </table>
+
+
+
+
+
+
+    </div>
+    <div>
+        <h1>CUSTOMER TABLE      </h1>
+        <table>
+            <thead>
+                <th>customer_id</th> 
+                <th>customer_name</th>
+                <th>email</th> 
+                <th>balance</th> 
+              
+            </thead>
+            
+            <tbody>
+                <% customersdata.forEach(x=>{ %>
+                    <tr>
+                        <td>
+                            <%=x.customer_id %>
+                        </td>
+                        <td>
+                            <%=x.customer_name %>
+                        </td>
+                        <td>
+                            <%=x.email %>
+                        </td>
+                        <td>
+                            <%=x.balance %>
+                        </td>
+                        
+                    </tr>
+                <%}) %>
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <h1> ORDER TABLE</h1>
+        <table>
+            <thead>
+                <th>customer_id</th> 
+                <th>inventory_id</th>
+                <th>item_name</th> 
+                <th>quantity</th> 
+              
+            </thead>
+            
+            <tbody>
+                <% orderdata.forEach(x=>{ %>
+                    <tr>
+                        <td>
+                            <%=x.customer_id %>
+                        </td>
+                        <td>
+                            <%=x.inventory_id %>
+                        </td>
+                        <td>
+                            <%=x.item_name %>
+                        </td>
+                        <td>
+                            <%=x.quantity %>
+                        </td>
+                        
+                    </tr>
+                <%}) %>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
